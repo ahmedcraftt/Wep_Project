@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Login/SignUp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/png" href="imgs/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="imgs/saudiGermanHospitalLogo.png" alt="">
+    </div>
+
+    <nav>
+        <h1>Saudi German Health</h1>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-contact.html">About us</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="specialties.html">Specialties</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+<section class="auth-section">
+    <div class="auth-container">
+
+        <div class="auth-toggle">
+            <button id="loginBtn" class="active">Login</button>
+            <button id="signupBtn">Sign Up</button>
+        </div>
+
+        <!-- LOGIN -->
+        <form id="loginForm" class="auth-form active">
+            <h2>Welcome Back</h2>
+
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+
+            <button type="submit" class="auth-btn">Login</button>
+        </form>
+
+        <form id="signupForm" class="auth-form">
+            <h2>Create Account</h2>
+
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+
+            <button type="submit" class="auth-btn">Sign Up</button>
+        </form>
+
+    </div>
+</section>
+
+<script>
+    const loginBtn = document.getElementById("loginBtn");
+    const signupBtn = document.getElementById("signupBtn");
+    const loginForm = document.getElementById("loginForm");
+    const signupForm = document.getElementById("signupForm");
+
+    loginBtn.onclick = () => {
+        loginForm.classList.add("active");
+        signupForm.classList.remove("active");
+        loginBtn.classList.add("active");
+        signupBtn.classList.remove("active");
+    }
+
+    signupBtn.onclick = () => {
+        signupForm.classList.add("active");
+        loginForm.classList.remove("active");
+        signupBtn.classList.add("active");
+        loginBtn.classList.remove("active");
+    }
+</script>
+<div class="social-buttons">
+    <a href="https://www.facebook.com/SaudiGermanHealth" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+     </a>
+
+    <a href="https://www.instagram.com/sgh.group/" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/company/saudi-german-hospitals-group/" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+</div>
+</main>
+<footer>
+    <p>&copy; 2026 Saudi German Health. All rights reserved.</p>
+</footer>
+</body>
+</html>
