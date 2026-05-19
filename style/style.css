@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +32,7 @@ header h1 {
     margin-bottom: 10px;
 }
 .logo {
-    margin-left: a;
+    margin-left: auto;
 }
 .logo img {
     width: auto;
@@ -76,6 +77,42 @@ header nav {
 .hero p {
     margin-bottom: 20px;
     font-size: 18px;
+}
+
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    min-height: 350px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+.slide h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.slide p {
+    font-size: 1.2rem;
+}
+
+.hero-buttons {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .btnBook,
@@ -289,4 +326,19 @@ footer {
 
 .auth-btn:hover {
     background: #ffb703;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    outline: none;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,16 +26,40 @@
             <a href="login.html">Login/SignUp</a>
         </header>
         <main>
-            <section class="hero">
-                <h2>Caring like family</h2>
-                <p>24/7 medical services with expert doctors</p>
-                <a href="#" class="btnBook">
-                    Book now
-                </a>
-                <a href="doctors.html" class="btnFindDoctors">
-                    Find a doctor
-                </a>
+            <section class="hero slideshow">
+
+                <div class="slide active">
+                    <h2>Caring like family</h2>
+                    <p>24/7 medical services with expert doctors</p>
+                </div>
+
+                <div class="slide">
+                    <h2>Emergency Care 24/7</h2>
+                    <p>Rapid emergency response with specialized teams.</p>
+                </div>
+
+                <div class="slide">
+                    <h2>World Class Doctors</h2>
+                    <p>Experienced consultants across all specialties.</p>
+                </div>
+
+                <div class="slide">
+                    <h2>Advanced Medical Equipment</h2>
+                    <p>Modern healthcare technology for accurate treatment.</p>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#" class="btnBook">
+                        Book now
+                    </a>
+
+                    <a href="doctors.html" class="btnFindDoctors">
+                        Find a doctor
+                    </a>
+                </div>
+
             </section>
+            <script src="scripts/hero.js"></script>
             <section class="services">
                 <h2>Our Services</h2>
                 <div class="servicesList">
@@ -60,6 +84,7 @@
                 <h2>Our Doctors</h2>
                 <div class="doctor-list">
                     <article>
+                        <!--suppress CheckImageSize -->
                         <img src="imgs/Hany Elbarbary.webp" alt="DoctorHany" width="256" height="256">
                         <h3>Dr. Hany Elbarbary</h3>
                         <p>Consultant</p>

@@ -71,9 +71,9 @@ Saudi German Health is a representation of how far we have come, a celebration o
                 <p>📧 SaudiGermanHospital.com</p>
             </div>
 
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
+            <form class="contact-form" action="php/insert.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" rows="5" required></textarea>
                 <button type="submit">Send Message</button>
             </form>

@@ -36,7 +36,6 @@
             <button id="signupBtn">Sign Up</button>
         </div>
 
-        <!-- LOGIN -->
         <form id="loginForm" class="auth-form active">
             <h2>Welcome Back</h2>
 
@@ -49,9 +48,14 @@
         <form id="signupForm" class="auth-form">
             <h2>Create Account</h2>
 
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
+            <input type="text" id="signupName" placeholder="Full Name">
+            <small class="error" id="nameError"></small>
+
+            <input type="email" id="signupEmail" placeholder="Email">
+            <small class="error" id="emailError"></small>
+
+            <input type="password" id="signupPassword" placeholder="Password">
+            <small class="error" id="passwordError"></small>
 
             <button type="submit" class="auth-btn">Sign Up</button>
         </form>
@@ -59,26 +63,8 @@
     </div>
 </section>
 
-<script>
-    const loginBtn = document.getElementById("loginBtn");
-    const signupBtn = document.getElementById("signupBtn");
-    const loginForm = document.getElementById("loginForm");
-    const signupForm = document.getElementById("signupForm");
+<script src="scripts/login.js"></script>
 
-    loginBtn.onclick = () => {
-        loginForm.classList.add("active");
-        signupForm.classList.remove("active");
-        loginBtn.classList.add("active");
-        signupBtn.classList.remove("active");
-    }
-
-    signupBtn.onclick = () => {
-        signupForm.classList.add("active");
-        loginForm.classList.remove("active");
-        signupBtn.classList.add("active");
-        loginBtn.classList.remove("active");
-    }
-</script>
 <div class="social-buttons">
     <a href="https://www.facebook.com/SaudiGermanHealth" target="_blank">
         <i class="fab fa-facebook-f"></i>
